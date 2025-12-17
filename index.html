@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mubeen Ali - Web Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Syne:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Syne:regular,500,600,700,800" rel="stylesheet" />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0"
+  }
+}
+</script>
+</head>
+
+<body>
+    <div id="loader">
+        <h1 id="loader-text"></h1>
+    </div>
+
+
+    <main>
+        <!-- NAVBAR -->
+        <nav class="navbar" id="navbar">
+            <div class="container navbar-container">
+                <!-- Logo -->
+                <div class="logo">
+                    <span>M</span>ubeen<span>.</span>
+                </div>
+
+                <!-- Desktop Links -->
+
+                <div class="nav-links desktop-only">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#service" class="nav-link">Service</a>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+
+                    <!-- CTA Button -->
+                    <div class="desktop-only">
+                        <a href="#contact"> <button class="btn btn-primary">
+                                Hire Me <i data-lucide="arrow-right"></i>
+                            </button></a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu hidden">
+                <a href="#home" class="mobile-link">Home</a>
+                <a href="#about" class="mobile-link">About</a>
+                <a href="#service" class="mobile-link">Service</a>
+                <a href="#portfolio" class="mobile-link">Portfolio</a>
+                <a href="#contact" class="mobile-link">Contact</a>
+                <a href="#contact"> <button class="btn btn-primary full-width">
+                        Hire Me <i data-lucide="arrow-right"></i>
+                    </button></a>
+            </div>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <div class="bg-img"></div>
+        <div class="bg-img-uper"></div>
+
+
+        <section id="home" class="hero-section container1">
+            <!-- Background Giant Watermark Text -->
+
+            <div class="watermark-bg">
+                <h1>Developer & D</h1>
+            </div>
+
+
+            <div class="container hero-container">
+                <!-- LEFT COLUMN -->
+                <div class="hero-content">
+                    <span class="greeting">Hi I'm,</span>
+                    <h1 class="main-title">
+                        Mubeen <br /> <span>Ali</span>
+                    </h1>
+                    <div class="role-wrapper">
+                        <h2 class="role-subtitle">Web Developer</h2>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary shadow-glow"><a href="./images/my-cv.pdf" download>
+                                Download CV <i data-lucide="arrow-right"></i>
+                            </a> </button>
+                    </div>
+                </div>
+
+                <!-- CENTER COLUMN -->
+                <!-- <div class="hero-image-wrapper">
+           <div class="glow-effect"></div>
+           <div class="hero-image-container">
+             <img 
+               src="./images/Background (1).png" 
+               alt="Mubeen Ali"
+               class="hero-img" 
+             />
+           </div>
+        </div> -->
+
+                <!-- RIGHT COLUMN -->
+                <div class="hero-description">
+                    <div class="desc-top">
+                        <p>
+                            Hi, I'm Mubeen Ali from Pakistan — I build clean, responsive and interactive websites that
+                            look
+                            great on any device.
+                        </p>
+                    </div>
+                    <div class="desc-bottom">
+                        <p>
+                            I craft responsive, dynamic and visually appealing websites that help brands stand out
+                            online.
+                            With a strong understanding of UI/UX and front-end development, I turn ideas into smooth,
+                            high-quality web experiences.
+                        </p>
+                        <div class="signature">
+                            <span>Mubeen Ali</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>scroll to find more</span>
+                <i data-lucide="arrow-down"></i>
+            </div>
+            <marquee direction="left" scrollamount="5" behavior="scroll" loop="infinite" class="marqi">Creative
+                Developer & Designer Creative Developer & Designer Creative Developer & Designer Creative Developer &
+                Designer Creative Developer & Designer Creative Developer & Designer</marquee>
+        </section>
+
+        <!-- ABOUT INTRO -->
+        <section id="about" class="about-intro-section">
+            <div class="container">
+                <div class="about-intro-grid">
+                    <div class="about-intro-text">
+                        <p>
+                            Driven by curiosity and a love for design, I create simple, functional, and visually
+                            striking
+                            digital experiences. As a student, I'm always learning and exploring new ideas.
+                        </p>
+                    </div>
+                    <div class="about-intro-cta">
+                        <p>
+                            The fusion of my passion for design, development, and seamless user experiences places me at
+                            the
+                            intersection of creativity and technology in the digital world.
+                        </p>
+                        <button class="link-btn group">
+                            <span>More About Me</span>
+                            <div class="icon-circle">
+                                <i data-lucide="arrow-down-left"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="big-text-wrapper">
+                <h2 class="big-text-outline bg-text-outline">
+                    ABOUT ME
+                </h2>
+            </div>
+        </section>
+
+        <!-- ABOUT DETAIL (Tabs & Orbit) -->
+        <section class="about-detail-section">
+            <div class="container about-detail-grid">
+
+                <!-- LEFT COLUMN: Text Content -->
+                <div class="about-details">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-desc">
+                        Hi, I'm Mubeen Ali — a passionate Frontend Web Developer from Pakistan. I specialize in creating
+                        modern, responsive, and user-friendly websites using HTML, CSS, JavaScript, and GSAP animations.
+                        I
+                        love turning ideas into clean and functional designs that work perfectly on all devices.
+                    </p>
+
+                    <!-- Tabs -->
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="Skills">
+                            Skills
+                        </button>
+                        <button class="tab-btn" data-tab="Experience">
+                            Experience
+                        </button>
+                        <button class="tab-btn" data-tab="Education">
+                            Education
+                        </button>
+                    </div>
+
+                    <!-- Tab Content: Skills -->
+                    <div id="tab-Skills" class="tab-content">
+                        <div class="skill-item">
+                            <h3>HTML / CSS / JavaScript</h3>
+                            <p>Responsive & modern website development</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Front-End Development</h3>
+                            <p>Building clean UI using CSS Flexbox, Grid, Media Queries</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>UI/UX Design</h3>
+                            <p>Creating user-friendly interface layouts & smooth interactions</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>GSAP / Animation</h3>
+                            <p>Developing animated & engaging websites</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>API Integration</h3>
+                            <p>Connecting forms & apps with Google Sheets / Fetch API</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Problem Solving</h3>
+                            <p>Debugging and fixing front-end responsive issues</p>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content: Experience -->
+                    <div id="tab-Experience" class="tab-content hidden">
+                        <div class="skill-item">
+                            <h3>Front-End Web Developer – Freelance</h3>
+                            <p>Developed responsive and modern
+                                websites using HTML, CSS, JavaScript, GSAP animations, and API integration. Worked on
+                                UI/UX improvements, bug fixing, and layout design.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Web Development Intern – TechStirr (Faisalabad)</h3>
+                            <p>Worked with a
+                                professional development team, improved coding skills, practiced real-world projects,
+                                and learned industry standards in front-end development.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>UI/UX Design</h3>
+                            <p>Creating user-friendly interface layouts & smooth interactions</p>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content: Education -->
+                    <div id="tab-Education" class="tab-content hidden">
+                        <div class="skill-item">
+                            <h3>Bachelor’s Degree</h3>
+                            <p> Completed Graduation (BS) with strong interest in
+                                Statistics.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Web Development Certification</h3>
+                            <p> Completed a professional course in
+                                Front-End Development (HTML, CSS, JavaScript, Responsive Design, UI/UX basics, GSAP
+                                animations).</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Internship – TechStirr Faisalabad</h3>
+                            <p> Gained practical experience working
+                                on websites and real client projects.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>FSC Pre-Engineering</h3>
+                            <p> Science College Samanabad Faisalabad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: Orbit Animation -->
+                <div class="orbit-container">
+                    <!-- Center Logo -->
+                    <div class="orbit-center">
+                        <span class="logo-text"><span>M</span>ubeen<span>.</span></span>
+                    </div>
+
+                    <!-- Inner Ring (3 Icons) -->
+                    <div class="orbit-ring inner">
+                        <!-- 1. Tailwind -->
+                        <div class="orbit-item" style="--angle: 0deg">
+                            <div class="tech-icon bg-cyan">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                                    alt="Tailwind" />
+                            </div>
+                        </div>
+                        <!-- 2. VS Code -->
+                        <div class="orbit-item" style="--angle: 120deg">
+                            <div class="tech-icon bg-blue">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
+                                    alt="VS Code" />
+                            </div>
+                        </div>
+                        <!-- 3. Git -->
+                        <div class="orbit-item" style="--angle: 240deg">
+                            <div class="tech-icon bg-orange-red">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
+                                    alt="Git" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Middle Ring (6 Icons) -->
+                    <div class="orbit-ring middle">
+                        <!-- 1. React -->
+                        <div class="orbit-item" style="--angle: 0deg">
+                            <div class="tech-icon bg-blue">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                                    alt="React" />
+                            </div>
+                        </div>
+                        <!-- 2. Node -->
+                        <div class="orbit-item" style="--angle: 60deg">
+                            <div class="tech-icon bg-green">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+                                    alt="Node" />
+                            </div>
+                        </div>
+                        <!-- 3. Redux -->
+                        <div class="orbit-item" style="--angle: 120deg">
+                            <div class="tech-icon bg-purple">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+                                    alt="Redux" />
+                            </div>
+                        </div>
+                        <!-- 4. MongoDB -->
+                        <div class="orbit-item" style="--angle: 180deg">
+                            <div class="tech-icon bg-green">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+                                    alt="MongoDB" />
+                            </div>
+                        </div>
+                        <!-- 5. Figma -->
+                        <!-- <div class="orbit-item" style="--angle: 240deg">
+                        <div class="tech-icon bg-orange">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg"
+                                alt="Figma" />
+                        </div>
+                    </div> -->
+                        <!-- 6. Next.js -->
+                        <!-- <div class="orbit-item" style="--angle: 300deg">
+                        <div class="tech-icon bg-white">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg"
+                                alt="NextJS" />
+                        </div>
+                    </div> -->
+                    </div>
+
+                    <!-- Outer Ring (8 Icons) -->
+                    <div class="orbit-ring outer">
+                        <!-- 1. TS -->
+                        <div class="orbit-item" style="--angle: 0deg">
+                            <div class="tech-icon bg-blue-dark">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                                    alt="TS" />
+                            </div>
+                        </div>
+                        <!-- 2. Python -->
+                        <div class="orbit-item" style="--angle: 45deg">
+                            <div class="tech-icon bg-blue-yellow">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                                    alt="Python" />
+                            </div>
+                        </div>
+                        <!-- 3. HTML -->
+                        <div class="orbit-item" style="--angle: 90deg">
+                            <div class="tech-icon bg-orange-red">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                                    alt="HTML" />
+                            </div>
+                        </div>
+                        <!-- 4. Sass -->
+                        <div class="orbit-item" style="--angle: 135deg">
+                            <div class="tech-icon bg-pink">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
+                                    alt="Sass" />
+                            </div>
+                        </div>
+                        <!-- 5. CSS -->
+                        <div class="orbit-item" style="--angle: 180deg">
+                            <div class="tech-icon bg-blue-light">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+                                    alt="CSS" />
+                            </div>
+                        </div>
+                        <!-- 6. Docker -->
+                        <div class="orbit-item" style="--angle: 225deg">
+                            <div class="tech-icon bg-blue">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"
+                                    alt="Docker" />
+                            </div>
+                        </div>
+                        <!-- 7. JS -->
+                        <!-- <div class="orbit-item" style="--angle: 270deg">
+                        <div class="tech-icon bg-yellow">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                                alt="JS" />
+                        </div>
+                    </div> -->
+                        <!-- 8. Bootstrap -->
+                        <!-- <div class="orbit-item" style="--angle: 315deg">
+                        <div class="tech-icon bg-purple-dark">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg"
+                                alt="Bootstrap" />
+                        </div>
+                    </div> -->
+                    </div>
+
+                    <!-- Glow -->
+                    <div class="orbit-glow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="service" class="services-section">
+            <!-- Background Text -->
+            <div class="bg-text-wrapper top">
+                <h2 class="bg-text-outline">SERVICES</h2>
+            </div>
+
+            <div class="container relative z-10">
+                <h2 class="section-title mb-large">Services</h2>
+
+                <div class="services-grid">
+                    <!-- Service Card 1 -->
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>By working closely with UX designers and developers, I helped to realize digital products for
+                            corporates, startups, non-profits, and more.</p>
+                        <button class="learn-more-btn">
+                            Learn More <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i data-lucide="layout"></i>
+                        </div>
+                        <h3>UI Design</h3>
+                        <p>Creating intuitive and visually appealing user interfaces that enhance user experience and
+                            drive
+                            engagement.</p>
+                        <button class="learn-more-btn">
+                            Learn More <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i data-lucide="clapperboard"></i>
+                        </div>
+                        <h3>Website Animation & GSAP Effects</h3>
+                        <p>I add smooth scroll animations, fade-ins, image reveals, hover effects, and interactive
+                            motion to
+                            make websites more engaging.</p>
+                        <button class="learn-more-btn">
+                            Learn More <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i data-lucide="file-spreadsheet"></i>
+                        </div>
+                        <h3>API Integration & Google Sheet Forms</h3>
+                        <p>I create working contact forms connected to Google Sheets, Fetch API, and custom backend
+                            solutions. Form data saves automatically to your sheet.</p>
+                        <button class="learn-more-btn">
+                            Learn More <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                    <!-- Service Card 5 -->
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i data-lucide="refresh-cw-off"></i>
+                        </div>
+                        <h3>Bug Fixing & Website Maintenance</h3>
+                        <p>I fix layout issues, responsive bugs, broken sections, slow animations, and provide regular
+                            maintenance and updates to keep websites running smoothly and error-free</p>
+                        <button class="learn-more-btn">
+                            Learn More <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                    <!-- Service Card 6 -->
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Ensuring your website looks and functions perfectly across all devices, from desktops to
+                            smartphones.</p>
+                        <button class="learn-more-btn">
+                            Learn More <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section id="portfolio" class="portfolio-section">
+            <!-- Background Text -->
+            <div class="bg-text-wrapper top">
+                <h2 class="bg-text-outline">PORTFOLIO</h2>
+            </div>
+
+            <div class="container relative z-10">
+                <div class="portfolio-header">
+                    <h2 class="section-title">Portfolio</h2>
+                    <p class="section-subtext">
+                        Here's a selection of projects that showcase my passion for design and development, reflecting
+                        creativity and innovation.
+                    </p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./images/screencapture-mubeen6969-github-io-SkoraCare-2025-12-10-19_25_35.png"
+                                alt="Project 1" />
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <div class="arrow-circle">
+                                <a href="https://mubeen6969.github.io/SkoraCare/" target="_blank"> <i
+                                        data-lucide="arrow-right"></i></a>
+                            </div>
+                            <h3>SKORA CARE Landing Page</h3>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./images/biofentch.png" alt="Project 2" />
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <div class="arrow-circle">
+                                <a href="https://mubeen6969.github.io/Fintech-App-Landing-Page/" target="_blank"> <i
+                                        data-lucide="arrow-right"></i></a>
+                            </div>
+                            <h3>MOBILE APP application</h3>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./images/eardrink.png" alt="Project 3" />
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <div class="arrow-circle">
+                                <a href="https://mubeen6969.github.io/family-golf/" target="_blank"> <i
+                                        data-lucide="arrow-right"></i></a>
+                            </div>
+                            <h3>SPORTS WEBSITE</h3>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="./images/sundown.png" alt="Project 4" />
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <div class="arrow-circle">
+                                <a href="https://mubeen6969.github.io/sundown/" target="_blank"> <i
+                                        data-lucide="arrow-right"></i></a>
+                            </div>
+                            <h3>SUNDOWN WEBSITE</h3>
+                        </div>
+                    </div>
+                    <div class="project-card card">
+                        <div class="project-img-wrapper">
+                            <img src="./images/sundown.png" alt="Project 4" />
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <div class="arrow-circle">
+                                <a href="https://mubeen6969.github.io/sundown/" target="_blank"> <i
+                                        data-lucide="arrow-right"></i></a>
+                            </div>
+                            <h3>SUNDOWN WEBSITE</h3>
+                        </div>
+                    </div>
+                    <div class="project-card card">
+                        <div class="project-img-wrapper">
+                            <img src="./images/sundown.png" alt="Project 4" />
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <div class="arrow-circle">
+                                <a href="https://mubeen6969.github.io/sundown/" target="_blank"> <i
+                                        data-lucide="arrow-right"></i></a>
+                            </div>
+                            <h3>SUNDOWN WEBSITE</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center-btn">
+                    <button id="toggleBtn" class="explore btn btn-primary btn-outline-glow show-more">
+                        Explore More <i data-lucide="move-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact-section">
+            <!-- Background Text -->
+            <div class="bg-text-wrapper top">
+                <h2 class="bg-text-outline">CONTACT</h2>
+            </div>
+
+            <div class="container relative z-10">
+                <div class="divider-line"></div>
+                <h2 class="section-title mb-large">Contact Us</h2>
+
+                <div class="contact-grid">
+                    <!-- Info -->
+                    <div class="contact-info">
+                        <p class="contact-desc">
+                            Let's connect and turn your concept into a fully functional, optimized, and future-ready
+                            digital
+                            product built with precision.
+                        </p>
+                        <div class="contact-methods">
+                            <div class="method-item">
+                                <div class="icon-box">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div>
+                                    <h3>Phone</h3>
+                                    <p class="method-val">+92 3206427954</p>
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <div class="icon-box">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p class="method-val">forwebdevelopment09@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-btn"><i data-lucide="facebook"></i></a>
+                            <a href="#" class="social-btn"><i data-lucide="twitter"></i></a>
+                            <a href="#" class="social-btn"><i data-lucide="linkedin"></i></a>
+                            <a href="#" class="social-btn"><i data-lucide="instagram"></i></a>
+                        </div>
+                        <div class="cv-btn-wrapper">
+                            <button class="btn btn-primary shadow-glow"><a href="./images/my-cv.pdf" download>
+                                    Download CV <i data-lucide="arrow-right"></i>
+                                </a> </button>
+                        </div>
+                    </div>
+
+
+                    <!-- Form -->
+                    <div class="contact-form-card">
+                        <div class="form-glow"></div>
+                        <h3>Get In Touch</h3>
+                        <form id="form" class="contact-form" name="submit-to-google-sheet">
+
+                            <div class="form-row">
+                                <input type="text" placeholder="Your Name" class="input-field" name="Name" />
+                                <input type="email" placeholder="Email Address" class="input-field" name="Email" />
+                            </div>
+                            <input type="tel" placeholder="Phone Number" class="input-field full" name="PHONE-NUMBER"
+                                required />
+                            <select class="input-field full select-field">
+                                <option value="" disabled selected>Select Service Type</option>
+                                <option value="web">Web Development</option>
+                                <option value="ui">UI/UX Design</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <textarea placeholder="Tell us about your device issue..." rows="4"
+                                class="input-field full textarea" name="Message" required></textarea>
+                            <button type="submit" class="btn btn-primary full-width shadow-glow">
+                                Send Message <i data-lucide="arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>
+                Copyright © 2024 | All rights reserved. | Developed by MW.
+            </p>
+        </footer>
+    </main>
+
+    <!-- Main Logic Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
