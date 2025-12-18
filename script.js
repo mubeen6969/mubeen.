@@ -260,13 +260,13 @@ const cards = document.querySelectorAll(".card");
 let isOpen = false;
 
 toggleBtn.addEventListener("click", () => {
-    isOpen = !isOpen;
+  isOpen = !isOpen;
 
-    cards.forEach(card => {
-        card.classList.toggle("show", isOpen);
-    });
+  cards.forEach(card => {
+    card.classList.toggle("show", isOpen);
+  });
 
-    toggleBtn.innerText = isOpen ? "Show Less" : "Show More";
+  toggleBtn.innerText = isOpen ? "Show Less" : "Show More";
 });
 
 

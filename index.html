@@ -8,6 +8,7 @@
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy:regular" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link
@@ -32,9 +33,9 @@
 </head>
 
 <body>
-    <div id="loader">
+    <!-- <div id="loader">
         <h1 id="loader-text"></h1>
-    </div>
+    </div> -->
 
 
     <main>
@@ -90,9 +91,9 @@
         <section id="home" class="hero-section container1">
             <!-- Background Giant Watermark Text -->
 
-            <div class="watermark-bg">
+            <!-- <div class="watermark-bg">
                 <h1>Developer & D</h1>
-            </div>
+            </div> -->
 
 
             <div class="container hero-container">
@@ -105,10 +106,15 @@
                     <div class="role-wrapper">
                         <h2 class="role-subtitle">Web Developer</h2>
                     </div>
-                    <div>
+                    <!-- <div>
                         <button class="btn btn-primary shadow-glow"><a href="./images/my-cv.pdf" download>
                                 Download CV <i data-lucide="arrow-right"></i>
                             </a> </button>
+                    </div> -->
+                     <div class="desktop-only">
+                        <a href="#contact"> <button class="btn btn-primary">
+                                Download CV  <i data-lucide="arrow-right"></i>
+                            </button></a>
                     </div>
                 </div>
 
@@ -641,16 +647,17 @@
 
             <div class="container relative z-10">
                 <div class="divider-line"></div>
-                <h2 class="section-title mb-large">Contact Us</h2>
+               
 
                 <div class="contact-grid">
                     <!-- Info -->
                     <div class="contact-info">
-                        <p class="contact-desc">
+                        <!-- <p class="contact-desc">
                             Let's connect and turn your concept into a fully functional, optimized, and future-ready
                             digital
                             product built with precision.
-                        </p>
+                        </p> -->
+                        <h2 class="section-title mb-large">Contact Me</h2>
                         <div class="contact-methods">
                             <div class="method-item">
                                 <div class="icon-box">
@@ -677,11 +684,11 @@
                             <a href="#" class="social-btn"><i data-lucide="linkedin"></i></a>
                             <a href="#" class="social-btn"><i data-lucide="instagram"></i></a>
                         </div>
-                        <div class="cv-btn-wrapper">
-                            <button class="btn btn-primary shadow-glow"><a href="./images/my-cv.pdf" download>
-                                    Download CV <i data-lucide="arrow-right"></i>
-                                </a> </button>
-                        </div>
+                        <div class="desktop-only">
+                        <a href="#contact"> <button class="btn btn-primary">
+                                Download CV  <i data-lucide="arrow-right"></i>
+                            </button></a>
+                    </div>
                     </div>
 
 
@@ -703,7 +710,7 @@
                                 <option value="ui">UI/UX Design</option>
                                 <option value="other">Other</option>
                             </select>
-                            <textarea placeholder="Tell us about your device issue..." rows="4"
+                            <textarea placeholder="Write your message here..." rows="4"
                                 class="input-field full textarea" name="Message" required></textarea>
                             <button type="submit" class="btn btn-primary full-width shadow-glow">
                                 Send Message <i data-lucide="arrow-right"></i>
@@ -716,7 +723,7 @@
 
         <footer class="footer">
             <p>
-                Copyright © 2024 | All rights reserved. | Developed by MW.
+                Copyright © 2025 | All rights reserved. | Developed by MW.
             </p>
         </footer>
     </main>
