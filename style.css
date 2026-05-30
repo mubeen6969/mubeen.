@@ -2,6 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 :root {
+
     --color-cyan: #00C2E0;
     --color-cyan-hover: #00a0b8;
     --text-gray: #9ca3af;
@@ -1595,6 +1596,9 @@ button {
     display: flex;
     gap: 1rem;
     margin-bottom: 3rem;
+}
+.social-links i{
+    font-size: 30px;
 }
 
 .social-btn {
