@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 :root {
     --color-cyan: #00C2E0;
     --color-cyan-hover: #00a0b8;
@@ -190,6 +193,8 @@ button {
     top: 0;
     left: 0;
     right: 0; */
+    position: fixed;
+    width: 100%;
     z-index: 100;
     padding: .8rem 0;
     background: transparent;
